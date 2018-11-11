@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="500dp"
+        android:layout_height="500dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/DC_Button_AddNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加导航点" />
+
+        <Button
+            android:id="@+id/DC_Button_RemoveNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="删除导航点" />
+
+        <Button
+            android:id="@+id/DC_Button_SubmitNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交修改" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

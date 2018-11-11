@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5cae9"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/DC_Button_Connect"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#1E88E5"
+        android:text="Connect"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ico_robot" />
+
+    <TextView
+        android:id="@+id/tv_ros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Connect to ROS"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/DC_EditTextGetIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:hint="Master IP"
+        android:text="192.168.2.196" />
+
+    <EditText
+        android:id="@+id/DC_EditTextGetPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Port, default 9090"
+        android:text="9090" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="  1、保证打开ROS端的服务器
+                      2、以太网或是WiFi保证在同一网段下
+                      3、保证 IP输入正确
+                      4、联系管理员"
+        android:textColor="#ff0000" />
+
+</LinearLayout>

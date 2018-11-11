@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:id="@+id/DC_TextViewShowElectricPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="9dp"
+            android:text="100%"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <customView.BatteryView
+            android:id="@+id/DC_Custom_Battery_view"
+            android:layout_width="81dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="9dp" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/DC_Fragemnt_ShowMain"
+        android:layout_width="800dp"
+        android:layout_height="550dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp">
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/DC_ImgBtn_Up"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/xml_move_up" />
+
+        <ImageButton
+            android:id="@+id/DC_ImgBtn_Down"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/xml_move_down" />
+
+        <ImageButton
+            android:id="@+id/DC_ImgBtn_Left"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/xml_move_left" />
+
+        <ImageButton
+            android:id="@+id/DC_ImgBtn_Right"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/xml_move_right" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/DC_LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/DC_Button_SetNavLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置导航点" />
+
+        <Button
+            android:id="@+id/DC_Button_ShowRobot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="机器人位置" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/DC_LinearLayout1">
+
+        <Button
+            android:id="@+id/DC_Button_Navi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="一号窗口" />
+
+        <Button
+            android:id="@+id/DC_Button_Navi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="二号窗口" />
+
+        <Button
+            android:id="@+id/DC_Button_Navi3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="三号窗口" />
+
+        <Button
+            android:id="@+id/DC_Button_Navi4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="四号窗口" />
+
+        <Button
+            android:id="@+id/DC_Button_Navi5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="五号窗口" />
+
+        <Button
+            android:id="@+id/DC_Button_CancelNavi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="取消当前的导航" />
+
+        <Button
+            android:id="@+id/DC_Button_NaviPatrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="巡逻" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
